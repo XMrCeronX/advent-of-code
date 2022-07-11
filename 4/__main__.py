@@ -87,7 +87,7 @@ class BingoSubsystem:
                     self.__result = number * board.get_sum_all_unmarked_numbers()
                     return
 
-    def get_last_winner(self):
+    def get_last_winning_board(self):
         result = []
         for number in self.__sequence_of_numbers:
             board_index = 0
@@ -131,4 +131,4 @@ if __name__ == '__main__':
     print(bingo_subsystem)  # 58374
     print()
     # --- Part Two ---
-    print(bingo_subsystem.get_last_winner())  # 11377
+    print(bingo_subsystem.get_last_winning_board())  # 11377
